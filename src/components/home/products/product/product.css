@@ -1,0 +1,30 @@
+.HomeProduct{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 2px solid rgb(0, 0, 0, 0.4);
+    padding: 20px;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+    transition: ease-out 0.3s;
+}
+.HomeProduct:hover{
+    box-shadow: 11px 11px 11px -5px rgb(161, 161, 161);
+}
+.lrnbtn{
+    width: 50%;
+    border: 2px solid rgb(0, 0, 0, 0.4);
+    border-radius: 5px;
+    background-color: transparent;
+    transition: 0.3s ease-in;
+}
+.lrnbtn:hover{
+    border: 2px solid blue;
+}
+
+
+.HomeProductimg{
+    width: 60%;
+}

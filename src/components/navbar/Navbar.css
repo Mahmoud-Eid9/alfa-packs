@@ -1,0 +1,184 @@
+.navDefault {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 100%!important;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  transition: ease-out 0.3s;
+  padding-top: 30px !important;
+  z-index: 10;
+
+}
+.navbar-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+.Line {
+  height: 1px;
+  width: 80%;
+  background-color: rgb(0, 0, 0, 0.2);
+  margin-top: 120px;
+}
+.navDefault:before
+{
+    width: 5%;
+    height: 1px;
+    position: relative;
+    float: right;
+    background-color: rgb(0, 0, 0, 0.2);;
+    display: block;
+    content: '';
+}
+
+.mainNav .nav-link {
+  /* color: #070120!important; */
+  margin: 0.5rem 1.2rem !important;
+  font-weight: 500 !important;
+  text-align: center;
+  line-height: 22px;
+  transition: 0.3s;
+  font-size: 1.2rem;
+  font-family: sans-serif !important;
+  color: black !important;
+}
+
+
+
+.mainNav .nav-link:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+.mainNav .nav-link:hover:after {
+  width: 100%;
+  /* background: rgba(0, 0, 255, 0.822); */
+  background: blue
+}
+
+.mainNav .ActiveClass {
+  margin: 0.5rem 1.2rem !important;
+  font-weight: 500 !important;
+  transition: 0.3s;
+  font-size: 1.2rem;
+  font-family: sans-serif !important;
+  color: #d9d8d9 !important;
+}
+#basic-nav-dropdown:after{
+  height: 3px!important;
+  background-color: transparent!important;
+  color: blue!important;
+}
+.mainNav .ActiveClass:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 100%;
+  background: #d9d8d9;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+html:not([data-scroll='0']) .nav-link {
+  color: #070120 !important;
+}
+
+html:not([data-scroll='0']) .nav-link:hover:after {
+  background: rgba(0, 0, 255, 0.822);
+}
+
+html:not([data-scroll='0']) .ActiveClass:after {
+  background: rgba(0, 0, 255, 0.822);
+}
+
+
+html:not([data-scroll='0']) .navDefault {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(6px);
+  padding-top: 15px !important
+}
+
+.navBrn {
+  font-weight: 700;
+  font-size: 1.5rem;
+  height: 100%;
+}
+
+
+
+.brnIcon {
+  /* font-weight: 800; */
+  background-image: url('../../../public/images/AP-simple.svg');
+  min-height: 47px;
+  min-width: 120px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* max-width: 100px;
+    max-height: auto; */
+}
+
+.navActiveClass {
+  color: 'red';
+  font-weight: 900;
+}
+
+@media (max-width: 981px) {
+  .navDefault {
+    background: white;
+    padding: 0.8rem 0.5rem !important;
+    width: 100%;
+    z-index: 99 !important;
+    transition: 0.5s !important;
+    text-align: center;
+    /* padding: 0!important; */
+    color: black;
+  }
+
+  html:not([data-scroll='0']) .navDefault {
+    background: white;
+    padding-top: 15px !important
+  }
+
+  .nav-item {
+    background: white;
+  }
+
+  .brnIcon {
+    background-image: url('../../../public/images/LOGO-ZELLIX-BLACK.png');
+    margin: auto !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    box-sizing: border-box;
+  }
+
+  .mainNav {
+    background: white
+  }
+
+  .mainNav .nav-link {
+    color: black !important;
+  }
+
+  html:not([data-scroll='0']) .nav-link {
+    color: #070120 !important;
+  }
+
+  html:not([data-scroll='0']) .brnIcon {
+    margin: auto !important;
+    min-height: 47px;
+    min-width: 120px;
+    padding: 0 !important;
+  }
+
+}
