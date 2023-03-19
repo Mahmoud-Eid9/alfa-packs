@@ -60,7 +60,7 @@ const NavBar = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto mainNav" activeKey="/home">
                         <Nav.Item>
-                            <Nav.Link as={Link} to="/" className="nav-link" onClick={() => window['scrollTo']({ top: 0, behavior: 'smooth' })}>Home</Nav.Link>
+                            <Nav.Link href='/' className="nav-link" onClick={() => window['scrollTo']({ top: 0, behavior: 'smooth' })}>Home</Nav.Link>
                         </Nav.Item>
                         <NavDropdown title={"Products"} id="basic-nav-dropdown">
                             <NavDropdown.Item href="products/cups">Cups</NavDropdown.Item>
@@ -73,13 +73,13 @@ const NavBar = () => {
                             <Nav.Link href="#testimonial" className="nav-link">Reviews</Nav.Link>
                         </Nav.Item> */}
                         <NavDropdown title={"Quality"} id="basic-nav-dropdown">
-                            <NavDropdown.Item href="/gmp">GMP</NavDropdown.Item>
+                            <NavDropdown.Item href="gmp">GMP</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="/ghp">GHP</NavDropdown.Item>
+                            <NavDropdown.Item href="ghp">GHP</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="/haccp">HACCP</NavDropdown.Item>
+                            <NavDropdown.Item href="haccp">HACCP</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="/iso2200">
+                            <NavDropdown.Item href="iso2200">
                                 iso 2200
                             </NavDropdown.Item>
                             <NavDropdown.Divider />
@@ -88,13 +88,13 @@ const NavBar = () => {
                             </NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Item>
-                            <Nav.Link href="/#aboutus" className="nav-link">Food Safe Packaging</Nav.Link>
+                            <Nav.Link href="/aboutus" className="nav-link">Food Safe Packaging</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href="/#aboutus" className="nav-link">About Us</Nav.Link>
+                            <Nav.Link href="/aboutus" className="nav-link">About Us</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href='/#contact' className="nav-link">Contact Us</Nav.Link>
+                            <Nav.Link href='/contact' className="nav-link">Contact Us</Nav.Link>
                         </Nav.Item>
                     </Nav>
                 </Navbar.Collapse>

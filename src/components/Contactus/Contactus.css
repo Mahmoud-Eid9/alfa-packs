@@ -1,0 +1,43 @@
+.contactus-page-container{
+
+    display: flex;
+    min-width: 100%;
+    margin: 200px auto ;
+
+}
+
+.contactus-image{
+    width: 50%;
+    margin: 60px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: url(../../../public//images/location-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px!important;
+}
+
+.contactdata-container{
+    width: 50%;
+    padding: 80px 40px;
+}
+
+.contact-data-line{
+    display: flex;
+    padding: 20px 0;
+}
+
+.contact-data-line-text{
+    display: table-cell;
+    padding: 3px 40px;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 17px;
+    font-weight: 500;
+    color: #404040;
+}
+
+.contact-data-line-icon{
+    color: #0A58CA;
+    
+}

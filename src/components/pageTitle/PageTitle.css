@@ -1,0 +1,11 @@
+.PageTitle{
+    position: absolute;
+    padding: 20px;
+    padding-left: 120px;
+    top: 0;
+    left: 0;
+    margin-top: 120px;
+    background-color: #202020;
+    width: 100%;
+    color: #FAFAFA;
+}

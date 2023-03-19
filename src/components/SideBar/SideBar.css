@@ -1,0 +1,32 @@
+.Sidebar-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    border-right: 1px solid rgb(0, 0, 0, 0.4);
+    min-width: 200px;
+    margin-top: 50px;
+
+    
+}
+.Sidebar-link{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+    margin-left: 30px;
+    width: 80%;
+    margin-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.Sidebar-link-active{
+    text-decoration: none;
+    color: #0A58CA!important;
+    font-size: 20px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+    margin-left: 30px;
+    width: 80%;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
