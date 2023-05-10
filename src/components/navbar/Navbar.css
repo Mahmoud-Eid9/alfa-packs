@@ -3,9 +3,9 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: #FAFAFA;
   width: 100%!important;
-  position: fixed !important;
+  position: absolute !important;
   top: 0;
   left: 0;
   transition: ease-out 0.3s;
@@ -31,7 +31,7 @@
     height: 1px;
     position: relative;
     float: right;
-    background-color: rgb(0, 0, 0, 0.2);;
+    background-color: rgb(0, 0, 0, 0.0);;
     display: block;
     content: '';
 }
@@ -40,19 +40,29 @@
   /* color: #070120!important; */
   margin: 0.5rem 1.2rem !important;
   font-weight: 500 !important;
-  text-align: center;
   line-height: 22px;
   transition: 0.3s;
   font-size: 1.2rem;
-  font-family: sans-serif !important;
   color: black !important;
 }
+.lang-menu{
 
+  min-width: 50px!important;
 
-
+}
+#dropdown-basic-button{
+  background-color: transparent;
+  color: black;
+  border: none;
+}
+.lang-item{
+  padding: 5px 20px!important;
+  text-align: center!important;
+}
 .mainNav .nav-link:after {
   content: '';
   display: block;
+  margin-top: 5px!important;
   margin: auto;
   height: 3px;
   width: 0px;
@@ -88,7 +98,18 @@
   background: #d9d8d9;
   transition: width 0.5s ease, background-color 0.5s ease;
 }
-
+.nav-drop {
+  min-width: 100%!important;
+  text-decoration: none;
+  color: #070120;
+  padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+  z-index: 100;
+}
+.dropdown-item{
+  width: 100%;
+  display: flex!important;
+  padding: 0!important;
+}
 html:not([data-scroll='0']) .nav-link {
   color: #070120 !important;
 }
@@ -103,7 +124,7 @@ html:not([data-scroll='0']) .ActiveClass:after {
 
 
 html:not([data-scroll='0']) .navDefault {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(245, 245, 245, 0.8);
   backdrop-filter: blur(6px);
   padding-top: 15px !important
 }
@@ -114,6 +135,9 @@ html:not([data-scroll='0']) .navDefault {
   height: 100%;
 }
 
+.dropdown-menu{
+  text-align: inherit!important;
+}
 
 
 .brnIcon {
@@ -135,7 +159,7 @@ html:not([data-scroll='0']) .navDefault {
 
 @media (max-width: 981px) {
   .navDefault {
-    background: white;
+    background-color: #FAFAFA;
     padding: 0.8rem 0.5rem !important;
     width: 100%;
     z-index: 99 !important;
@@ -145,21 +169,21 @@ html:not([data-scroll='0']) .navDefault {
     color: black;
   }
 
-  html:not([data-scroll='0']) .navDefault {
-    background: white;
-    padding-top: 15px !important
-  }
-
   .nav-item {
     background: white;
   }
 
+
   .brnIcon {
-    background-image: url('../../../public/images/LOGO-ZELLIX-BLACK.png');
-    margin: auto !important;
+
     padding-top: 20px !important;
     padding-bottom: 20px !important;
+    margin-top: 10px;
+    min-width: 90px;
     box-sizing: border-box;
+  }
+  .Line{
+    margin-top: 95px;
   }
 
   .mainNav {

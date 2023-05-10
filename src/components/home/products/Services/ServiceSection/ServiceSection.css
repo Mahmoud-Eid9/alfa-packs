@@ -1,0 +1,36 @@
+.ServiceSecitonText{
+    width: 100%;
+    text-justify: auto;
+    font-size: 20px;
+    padding: 0 50px;
+
+}
+.ServiceSectionContainer {
+    width: 100%;
+    max-height: 500px!important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.ServiceSectionImage{
+    width: 40%;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 981px) {
+
+    .ServiceSectionContainer{
+        flex-direction: column;
+        height: fit-content;
+        margin-bottom: 70px;
+    }
+    .ServiceSectionImage{
+        width: 60%;
+        margin-bottom: 50px;
+    }
+
+
+
+}

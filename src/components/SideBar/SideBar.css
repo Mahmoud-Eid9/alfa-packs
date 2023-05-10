@@ -2,11 +2,18 @@
     display: flex;
     flex-direction: column;
     padding: 0px;
-    border-right: 1px solid rgb(0, 0, 0, 0.4);
+    box-shadow: 9px 9px 11px -5px rgb(0, 0, 0, 0.15);
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 10px;
     min-width: 200px;
     margin-top: 50px;
-
-    
+    min-height: 120%;
+    transition: 0.3s ease-in;
+    min-height: 600px;
+}
+.Sidebar-container:hover {
+    box-shadow: 9px 9px 11px -5px rgb(0, 0, 0, 0.3);
 }
 .Sidebar-link{
     text-decoration: none;
@@ -29,4 +36,33 @@
     width: 80%;
     margin-top: 20px;
     padding-bottom: 20px;
+}
+
+@media (max-width: 981px) {
+    .Sidebar-container{
+        flex-direction: column;
+        align-items: end;
+        min-height: auto;
+        max-width: 100%;
+        min-width: 100%;
+        margin-top: 0;
+        margin: auto;
+        overflow-x: scroll;
+        padding-top: 10px;
+        list-style: circle;
+    }
+    .Sidebar-container-list{
+        direction: inherit;
+        box-shadow: 9px 9px 11px -5px rgb(0, 0, 0, 0.15);
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-top: 15px;
+    }
+    .Sidebar-link{
+        border-bottom: none;
+        text-align: center;
+        margin: 0;
+        min-width: 100px;
+        margin-left: 10px;
+    }
 }

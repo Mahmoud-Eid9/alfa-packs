@@ -1,0 +1,134 @@
+{
+    "hero": {
+        "title": "ألفا باك",
+        "description": " تصميم وصناعة الأكواب والعلب الورقية إستخدام مرة واحدة"
+    },
+    "back": "الرجوع",
+    "homeproducts": {
+        "title": "تصفح منتجاتنا",
+        "cups": "أكواب",
+        "containers": "علب",
+        "covers": "أغطية",
+        "more": "المزيد",
+        "services": {
+            "titles": {
+                "customdesign": "تصميم وطباعة خاصة",
+                "readymade": "تصميم وطباعة عامة",
+                "plain": "أكواب بدون طباعة",
+                "occasions": "تصميم وطباعة للمناسبات",
+                "covers": "أغطية"
+            },
+            "description": {
+                "customdesign": "طباعة تصميمات خاصة للكوفيهات والمطاعم والفنادق والشركات والمناسبات",
+                "readymade": "يمكن لعملائنا الإختيار من العديد من التصميمات العامة الجاهزة لدينا بأوزان مختلفة",
+                "plain": "تستخدم في عمل الأكواب الدبل ويستخدمها العملاء بعد لصق اللوجو الخاص بهم",
+                "occasions": "ظباعة تصميمات خاصة بالأاعياد والمناسبات",
+                "covers": "توفر ألفا باك أغطية لكل الأكواب بمختلف الأحجام"
+            }
+
+        }
+    },
+    "homequality": {
+        "title": "الجودة والتغليف الآمن للطعام",
+        "quality": "&larr; الجودة",
+        "foodsafety": "&larr; سلامة الغذاء"
+    },
+    "homecontactus": {
+        "title": "أتصل بنا ",
+        "description": "لمعرفة المزيد والإجابة علي أسئلتك",
+        "button": "أتصل بنا"
+    },
+    "navbar": {
+        "home": "الرئيسية",
+        "products": {
+            "title": "المنتجات",
+            "cups": "أكواب",
+            "containers": "علب",
+            "covers": "أغطية"
+        },
+        "quality": {
+            "outline": "الجودة في ألفا باك",
+            "title": "الجودة",
+            "gmp": "ممارسات التصنيع الجيدة",
+            "iso9001": "أيزو 9001"
+        },
+        "foodsafe":{
+            "outline": "سلامة الغذاء",
+            "title":  "سلامة الغذاء",
+            "ghs": "ممارسات النظافة الجيدة",
+            "haccp": "تحليل المخاطر",
+            "iso22000": "أيزو 22000"
+        },
+        "contactus": "أتصل بنا"
+    },
+    "footer": {
+        "usefullinks": "روابط سريعة",
+        "title": "ألفا باك",
+        "description": "أكواب وعلب ورقية"
+    },
+    "products": {
+        "cups": "المنتجات &larr; أكواب",
+        "containers":"المنتجات &larr; علب",
+        "covers":"المنتجات &larr; أغطية",
+        "sizes": {
+            "title": "الأحجام (أونس)",
+            "cups": "٤, ٦.٥, ٧, ٨, ٩, ١٠, ١٢, ١٤",
+            "containers": "٢٠, ٣٠"
+        } ,
+        "contactus": {
+            "title": "هل لديك أية أسئلة ؟",
+            "button": "أتصل بنا"
+        },
+        "4ozcup": "٤ أونس",
+        "6.5ozcup": "٦.٥ أونس",
+        "7ozcup": "٧ أونس",
+        "8ozcup": "٨ أونس",
+        "9ozcup": "٩ أونس",
+        "10ozcup": "١٠ أونس",
+        "12ozcup": " ١٢ أونس",
+        "14ozcup": " ١٤ أونس",
+        "20ozcontainer": "٢٠ أونس",
+        "30ozcontainer": "٣٠ أونس",
+        "coverfor4ozcup": "غطاء لكوب ٤ أونس",
+        "coverfor6.5ozcup": "غطاء لكوب ٦.٥ أونس",
+        "coverfor7ozcup": "غطاء لكوب ٧ أونس",
+        "coverfor8ozcup": "غطاء لكوب ۸ أونس",
+        "coverfor9ozcup": "غطاء لكوب ۹ أونس",
+        "coverfor12ozcup": "غطاء لكوب ١٢ أونس",
+        "coverfor14ozcup": "غطاء لكوب ١٤ أونس",
+        "coverfor20ozcontainer": "غطاء لعبوة ٢٠ أونس",
+        "coverfor30ozcontainer": "غطاء لعبوة ٣٠ أونس"
+    },
+    "quality": {
+        "gmp": "<h4> ممارسات التصنيع الجيدة <br>(GMP) </h4>",
+        "ghp": "ممارسات النظافة الجيدة",
+        "haccp": "تحليل المخاطر ونقاط التحكم الحرجة",
+        "iso9001": "أيزو 9001"
+    },
+    "qualitytitlesComment": {
+        "gmp": "<a href=\"/quality\">الجودة</a> &larr; ممارسات التصنيع الجيدة",
+        "ghp": "<a href=\"/food-safe-packaging\">سلامة الغذاء</a> &larr; ممارسات النظافة الجيدة",
+        "haccp": "<a href=\"/food-safe-packaging\">سلامة الغذاء</a> &larr; تحليل المخاطر",
+        "iso9001":"<a href=\"/quality\">الجودة</a> &larr; أيزو 9001",
+        "iso22000":"<a href=\"/food-safe-packaging\">سلامة الغذاء</a> &larr; أيزو 22000"
+    },
+        "qualitytitles": {
+        "gmp": "<a href=\"/quality\">الجودة</a>",
+        "ghp": "<a href=\"/food-safe-packaging\">سلامة الغذاء</a>",
+        "haccp": "<a href=\"/food-safe-packaging\">سلامة الغذاء</a>",
+        "iso9001":"<a href=\"/quality\">الجودة</a>",
+        "iso22000":"<a href=\"/food-safe-packaging\">سلامة الغذاء</a>"
+    },
+    "foodsafepackaging": {
+        "title": "سلامة الغذاء"
+    },
+    "contactus": {
+        "title": "أتصل بنا ",
+        "address": "المنطقة الصناعية دمياط الجديدة محافظة دمياط",
+        "getintouch": "تواصل معنا",
+        "yourname": "أسمك",
+        "youremail": "البريد الإلكتروني",
+        "yourmessage": "رسالتك...",
+        "send": "إرسال"
+    }
+}

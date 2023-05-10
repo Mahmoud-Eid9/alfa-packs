@@ -1,0 +1,138 @@
+.Hero-container {
+    margin-top: 50px;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+
+}
+
+.Hero-logo{
+    width: 30%;
+    margin: 0 auto;
+    position: absolute;
+    top: 70%;
+    left: 35%;
+}
+
+.iso-certified-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+    width: 18%;
+}
+
+.iso-certified {
+    height: 100%;
+}
+
+.Hero {
+    width: 100%;
+    min-height: 600px;
+    background: url('../../../../public//images//hero-image.png');
+    text-align: center;
+    z-index: -10;
+}
+
+.Hero-Title {
+    font-size: 60px;
+    color: #E5E5E5;
+}
+
+.Backdrop {
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Hero-Description {
+    font-size: 30px;
+    color: #E5E5E5;
+}
+
+@media (max-width: 981px) {
+
+    .Hero {
+        min-height: 350px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .iso-certified-images {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25%;
+        display: flex;
+        justify-content: space-between;
+        margin: 5px;
+        width: 22%;
+    }
+
+    .Backdrop {
+        width: 100%;
+        height: 350px;
+    }
+
+    .Hero-Description {
+        font-size: 20px;
+    }
+
+    .Hero-Title {
+        font-size: 45px;
+    }
+    .fancy-button{
+        margin-top: 5px!important;
+        min-height: 65px!important;
+        max-height: 50px!important;
+    }
+}
+
+
+.fancy-button {
+    --b: 3px;
+     /* border thickness */
+    --s: .45em;
+   /* size of the corner */
+   width: 15%;
+   min-width: max-content;
+   text-decoration: none;
+   min-height: 80px;
+   margin-top: 50px;
+    --color: #e2e2e2;
+    font-weight: bold;
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background: conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .6em;
+    font-size: 16px;
+    border: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .fancy-button:hover,
+  .fancy-button:focus-visible {
+    --_p: 0px;
+    outline-color: #ffffff;
+    color: white;
+    outline-offset: .05em;
+  }
+  
+  .fancy-button:active {
+    background: #ffffff;
+    color: #000000;
+  }

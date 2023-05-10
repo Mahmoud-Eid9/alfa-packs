@@ -1,24 +1,24 @@
-## Hazarded analysis and critical control points
+## Hazard Analysis and Critical Control Points (HACCP)
+---
+The company has established a HACCP program which includes:
+*	Conducting a risk analysis for all operations and products.
+*	Identifying critical points for each operation and product.
+*	Developing corrective actions to be taken in case of non-compliance with critical points.
+*	Providing employee training on HACCP procedures.
+*	Establishing an annual self-revision plan for HACCP.
+*	Ensuring critical points are controlled and employees are aware of them and take appropriate corrective actions.
 
 
-The company has established a program for the HACCP system includes:
+These measures help identify possible contamination during various stages of manufacture and ensure that the final product is hygienic. By being able to intervene at each critical point, the company can take necessary corrective actions to prevent contamination and damage to products.
+Moreover, the establishment of an annual self-revision program helps ensure that critical points on the production line remain valid and effective.
 
-* Risk analysis for all operations and products.
+Overall, the implementation of HACCP provides a comprehensive approach to food safety and quality management. It involves identifying potential hazards and taking measures to prevent them from occurring, resulting in a safe and high-quality product.
 
-* Determine the critical point for each critical point.
+<a class="navlink" href="/food-safe-packaging">Back</a>
 
-* Identify corrective actions to be taken in cases of non-correspondence to each critical point.
-
-* A training program for employees
-
-* An annual program of self-revision plans for the HACCP.
-
-* Control of the critical points and that staff are fully aware of the critical points and take appropriate corrective actions.
-
-* Achieved BRC-IOP requirements and is considered the toughest requirements in the world
-
-Thus identifying any possible contamination during the various stages of manufacture and assuring the final product to be hygienic.
-
-The ability to interfere with each critical point, makes it easy to take the necessary corrective actions and non-pollution products or damage.
-
-Establishment of an annual program of self-revision of the HACCP plans to make sure the critical points on the production line still valid.
+<style>
+.navlink{
+  direction: rtl;
+  display: block;
+}
+</style>

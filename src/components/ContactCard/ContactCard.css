@@ -1,0 +1,50 @@
+.Contactsidebar-header{
+    padding-right: 0;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+.Contactsidebar{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 220px;
+    max-width: 220px;
+    min-height: 550px;
+    max-height: 600px;
+    border-radius: 3px;
+    background: linear-gradient(#142679, #0755C4);
+    margin: 15px;
+    margin: auto;
+}
+
+.tchbtn{
+width: auto;
+ margin: 30px auto;
+ text-decoration: none;
+ background-color: transparent;
+ color: white;
+ border: 2px solid white;
+ padding: 5px 10px;
+ transition: 0.2s ease-in;
+ box-shadow: 5px 5px 11px 11px rgb(0, 0, 0, 0.2);
+}
+
+.tchbtn:hover{
+    color: #B7B7B7;
+    border: 2px solid #B7B7B7;
+}
+
+@media (max-width: 981px) {
+   .Contactsidebar{
+    min-width: 90%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    min-height: 300px;
+    max-height: 300px!important;
+   }
+}

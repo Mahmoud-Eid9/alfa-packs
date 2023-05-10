@@ -1,0 +1,127 @@
+{
+    "hero": {
+        "title": "Alfa Pack",
+        "description": "Paper cups and containers design and manufacturing"
+    },
+    "back": "Back",
+    "homeproducts": {
+        "title": "EXPLORE OUR PRODUCTS",
+        "cups": "Cups",
+        "containers": "Containers",
+        "covers": "Covers",
+        "more": "More",
+        "services": {
+            "titles":{
+                "customdesign": "Custom Design",
+                "readymade": "Ready Made Designs",
+                "plain": "Plain",
+                "occasions": "Holidays and Ocaasions",
+                "covers": "Covers"
+            },
+            "description":{
+                "customdesign": "Custom designs made for coffe shops, restaurants, hotels, companies and occasions",
+                "readymade": "customers can choose for a variety of ready made designs",
+                "plain": "used in making \"double cups\" and some customers use them after putting their logo",
+                "occasions": "Designs made for various occasions and holidays",
+                "covers": "Alfa Pack provides covers for all cups with different sizes"
+            }
+
+        }
+    },
+    "homequality": {
+        "title": "CHECK OUR QUALITY",
+        "quality": "Quality &rarr;",
+        "foodsafety": "Food Safety &rarr;"
+    },
+    "homecontactus": {
+        "title": "Get in touch",
+        "description": "for questions no matter how small !",
+        "button": "Contact Us"
+    },
+    "navbar": {
+        "home": "Home",
+        "products": {
+            "title": "Products",
+            "cups": "Cups",
+            "containers": "Containers",
+            "covers": "Covers"
+        },
+        "quality": {
+            "outline": "Quality in Alfa Pack",
+            "title": "Quality",
+            "gmp": "GMP",
+            "iso9001": "ISO 9001"
+        },
+        "foodsafe": {
+            "outline": "Food Safety",
+            "title": "Food Safe",
+            "ghs": "GHS",
+            "haccp": "HACCP",
+            "iso22000": "ISO 22000"
+        },
+        "contactus": "Contact Us"
+    },
+    "footer": {
+        "usefullinks": "Useful Links",
+        "title": "Alfa Pack",
+        "description": "Paper Cups & Containers"
+    },
+    "products": {
+        "cups": "Products &rarr; Cups",
+        "containers":"Products &rarr; Containers",
+        "covers":"Products &rarr; Covers",
+        "sizes": {
+            "title": "Sizes (oz)",
+            "cups": "4, 6.5, 7, 8, 9, 10, 12, 14",
+            "containers": "20, 30"
+        } ,
+        "contactus": {
+            "title": "Have any questions ?",
+            "button": "Get in Touch"
+        },
+        "4ozcup": "4 oz",
+        "6.5ozcup": "6.5 oz",
+        "7ozcup": "7 oz",
+        "8ozcup": "8 oz",
+        "9ozcup": "9 oz",
+        "10ozcup": "10 oz",
+        "12ozcup": "12 oz",
+        "14ozcup": "14 oz",
+        "20ozcontainer": "20 oz",
+        "30ozcontainer": "30 oz",
+        "coverfor4ozcup": "Cover for 4 oz Cup",
+        "coverfor6.5ozcup": "Cover for 6.5 oz Cup",
+        "coverfor7ozcup": "Cover for 7 oz Cup",
+        "coverfor8ozcup": "Cover for 8 oz Cup",
+        "coverfor9ozcup": "Cover for 9 oz Cup",
+        "coverfor12ozcup": "Cover for 12 oz Cup",
+        "coverfor14ozcup": "Cover for 14 oz Cup",
+        "coverfor20ozcontainer": "Cover for 20 oz Container",
+        "coverfor30ozcontainer": "Cover for 30 oz Container"
+    },
+    "quality": {
+        "gmp": "GMP",
+        "ghp": "GHP",
+        "haccp": "HACCP",
+        "iso9001": "ISO 9001"
+    },
+    "qualitytitles": {
+        "gmp": "<a href=\"/quality\">Quality</a>",
+        "ghp": "<a href=\"/food-safe-packaging\">Food Safe</a>",
+        "haccp": "<a href=\"/food-safe-packaging\">Food Safe</a>",
+        "iso9001":"<a href=\"/quality\">Quality</a>",
+        "iso22000":"<a href=\"/food-safe-packaging\">Food Safe</a>"
+    },
+        "foodsafepackaging": {
+        "title": "Food Safe Packaging"
+    },
+    "contactus": {
+        "title": "Contact Us",
+        "address": "Industrial Zone, New Damietta, Damietta Governorate",
+        "getintouch": "GET IN TOUCH",
+        "yourname": "Your Name",
+        "youremail": "Your Email",
+        "yourmessage": "Your Message...",
+        "send": "Send"
+    }
+}

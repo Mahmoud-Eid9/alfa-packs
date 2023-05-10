@@ -1,14 +1,30 @@
-import React from 'react';
+import React, { useState} from 'react';
 import { Link } from "react-router-dom";
 import './Navbar.css';
-
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { useTranslation } from 'react-i18next'
+import { useHistory } from "react-router-dom";
+import parse from 'html-react-parser'
+import { ToggleButton } from '@mui/material';
+import { ToggleButtonGroup } from '@mui/material';
 
 const NavBar = () => {
+    
+    const { t, i18n } = useTranslation()
+    const history = useHistory();
+    const [menuOpen, setMenuOpen] = useState(false);  // initially closed
+    const [alignment, setAlignment] = useState(i18n.language);
 
 
+    const toggleMenu = () => {     // this handler is "regular"
+        setMenuOpen(!menuOpen);    // open and close...
+    };
+
+    const closeMenu = () => {      // ... and this one only
+        setMenuOpen(false);    // closes it ...
+    };
     // The debounce function receives our function as a parameter
     const debounce = (fn) => {
 
@@ -46,57 +62,96 @@ const NavBar = () => {
     // Update scroll position for first time
     storeScroll();
 
+    const handleChange = (event, newAlignment) => {
+      setAlignment(newAlignment);
+      i18n.changeLanguage(newAlignment)
+    };
 
 
     const scrollTop = () => window['scrollTo']({ top: 0, behavior: 'smooth' });
     return (<div className='navbar-container'>
-        <Navbar className={`navbar navbar-expand-lg navbar-light  navDefault`} expand="lg">
+        <Navbar expanded={menuOpen} className={`navbar navbar-expand-lg navbar-light  navDefault`} expand="lg">
             <Container>
                 <Navbar.Brand as={Link} to="/" onClick={scrollTop} className="navBrn">
                     <div className="brnIcon" />
+
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav" />
+                    <ToggleButtonGroup
+                        color="primary"
+                        value={alignment}
+                        exclusive
+                        onChange={handleChange}
+                        aria-label="Platform"
+                    >
+                        <ToggleButton value="en">English</ToggleButton>
+                        <ToggleButton value="ar">عربي</ToggleButton>
+                    </ToggleButtonGroup>
+                {/* <Dropdown>
+
+
+                    <Dropdown.Toggle variant="success" id="dropdown-basic-button">
+                        <PublicIcon fontSize='medium'></PublicIcon>
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu className='lang-menu'>
+                        <Dropdown.Item><div className="nav-drop" onClick={() => { i18n.changeLanguage("en") }}>EN</div></Dropdown.Item>
+                        <Dropdown.Divider />
+                        <Dropdown.Item><div className="nav-drop" onClick={() => { i18n.changeLanguage("ar") }}>AR</div></Dropdown.Item>
+                    </Dropdown.Menu>
+                </Dropdown> */}
+
+                <Navbar.Toggle onClick={toggleMenu} aria-controls="basic-navbar-nav" />
+
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto mainNav" activeKey="/home">
                         <Nav.Item>
-                            <Nav.Link href='/' className="nav-link" onClick={() => window['scrollTo']({ top: 0, behavior: 'smooth' })}>Home</Nav.Link>
+                            <NavLink to='/' data-toggle="collapse"
+                                data-target="#navbarCollapse" className="nav-link" onClick={closeMenu}>{t("navbar.home")}</NavLink>
                         </Nav.Item>
-                        <NavDropdown title={"Products"} id="basic-nav-dropdown">
-                            <NavDropdown.Item href="products/cups">Cups</NavDropdown.Item>
+                        <NavDropdown
+                            title={t("navbar.products.title")} id="basic-nav-dropdown">
+                            <NavDropdown.Item><NavLink to="/products/cups" onClick={closeMenu} className="nav-drop">{t("navbar.products.cups")}</NavLink></NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="products/containers">Containers</NavDropdown.Item>
+                            <NavDropdown.Item><NavLink to="/products/containers" onClick={closeMenu} className="nav-drop">{t("navbar.products.containers")}</NavLink></NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="products/covers">Covers</NavDropdown.Item>
+                            <NavDropdown.Item><NavLink to="/products/covers" onClick={closeMenu} className="nav-drop">{t("navbar.products.covers")}</NavLink></NavDropdown.Item>
                         </NavDropdown>
                         {/* <Nav.Item>
                             <Nav.Link href="#testimonial" className="nav-link">Reviews</Nav.Link>
                         </Nav.Item> */}
-                        <NavDropdown title={"Quality"} id="basic-nav-dropdown">
-                            <NavDropdown.Item href="gmp">GMP</NavDropdown.Item>
+                        <NavDropdown title={t("navbar.quality.title")}
+                            id="basic-nav-dropdown">
+                            <NavDropdown.Item><NavLink to="/quality" onClick={closeMenu} className="nav-drop">{t("navbar.quality.outline")}</NavLink></NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="ghp">GHP</NavDropdown.Item>
+                            <NavDropdown.Item><NavLink to="/quality/gmp" onClick={closeMenu} className="nav-drop">{parse(t("navbar.quality.gmp"))}</NavLink></NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="haccp">HACCP</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="iso2200">
-                                iso 2200
-                            </NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="/iso14001">
-                                iso 14001
+                            <NavDropdown.Item >
+                                <NavLink to="/quality/iso9001" onClick={closeMenu} className="nav-drop">{t("navbar.quality.iso9001")}</NavLink>
                             </NavDropdown.Item>
                         </NavDropdown>
+                        <NavDropdown
+                            title={t("navbar.foodsafe.title")}
+                            id="basic-nav-dropdown">
+                            <NavDropdown.Item ><NavLink to="/food-safe-packaging" onClick={closeMenu} className="nav-drop">{t("navbar.foodsafe.outline")}</NavLink></NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item ><NavLink to="/foodsafe/ghs" onClick={closeMenu} className="nav-drop">{t("navbar.foodsafe.ghs")}</NavLink></NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item><NavLink to="/foodsafe/haccp" onClick={closeMenu} className="nav-drop">{t("navbar.foodsafe.haccp")}</NavLink></NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item >
+                                <NavLink to="/foodsafe/iso22000" onClick={closeMenu} className="nav-drop">{t("navbar.foodsafe.iso22000")}</NavLink>
+                            </NavDropdown.Item>
+                        </NavDropdown>
+                        {/* <Nav.Item>
+                            <NavLink to="/food-safe-packaging" onClick={closeMenu} className="nav-link">{t("navbar.foodsafepackaging")}</NavLink>
+                        </Nav.Item> */}
+                        {/* <Nav.Item>
+                            <NavLink to="/aboutus" onClick={closeMenu} className="nav-link">About Us</NavLink>
+                        </Nav.Item> */}
                         <Nav.Item>
-                            <Nav.Link href="/aboutus" className="nav-link">Food Safe Packaging</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link href="/aboutus" className="nav-link">About Us</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link href='/contact' className="nav-link">Contact Us</Nav.Link>
+                            <NavLink to='/contact' onClick={closeMenu} className="nav-link">{t("navbar.contactus")}</NavLink>
                         </Nav.Item>
                     </Nav>
+
                 </Navbar.Collapse>
             </Container>
         </Navbar>

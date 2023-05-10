@@ -3,20 +3,30 @@ import './Article.css'
 import ReactMarkdown from 'react-markdown'
 import PageTitle from '../pageTitle/PageTitle';
 import SideBar from '../SideBar/SideBar';
-
+import Footer from '../Footer/Footer';
+import rehypeRaw from 'rehype-raw'
+import { useTranslation } from 'react-i18next';
+import { NavLink } from 'react-router-dom';
 
 const Article = (props) => {
+    const {t, i18n} = useTranslation();
     const [article, setArticle] = useState({})
-    const sidebarItems = [{ title: "GMP", link: "gmp" }, { title: "GHP", link: "ghp" }, { title: "HACCP", link: "haccp" }]
-    const Mark = require(`../Markdowns/${props.article}`)
+    const sidebarItems = props.sideBarData
+    let Mark = require(`../Markdowns/${props.article}`)
+    if(i18n.language === "ar"){
+        Mark = require(`../Markdowns/ar/${props.article}`)
+    }else{
+        Mark = require(`../Markdowns/${props.article}`)
+    }
     useEffect(() => {
+
         fetch(Mark).then((response) => response.text()).then((text) => {
             console.log(text)
             setArticle({ terms: text })
         })
         console.log(article.terms)
     }, [Mark])
-    return (<div className='Gmp-container'>
+    return (<><div className='Article-container'>
         <PageTitle title={props.title} />
         {/* <div className='Contactsidebar'>
             <h3 className='Contactsidebar-header'>
@@ -25,8 +35,10 @@ const Article = (props) => {
             <button className='tchbtn'>Get in touch</button>
         </div> */}
         <SideBar className='Contactsidebar' sidebarItems={sidebarItems} />
-        <ReactMarkdown className='Article'>{article.terms}</ReactMarkdown>
+        <ReactMarkdown rehypePlugins={[rehypeRaw]} className='Article'>{article.terms}</ReactMarkdown>
     </div>
+        <Footer />
+    </>
     );
 }
 

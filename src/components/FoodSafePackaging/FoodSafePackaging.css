@@ -1,0 +1,35 @@
+.Foodsafe-Article{
+    padding-right: 50px;
+    margin-left: 0px;
+    font-size: 20px;
+}
+
+.Foodsafepackaging-page-container{
+    margin: 0 50px;
+    margin-top: 150px;
+    display: flex;
+}
+
+.iso22000-image{
+    max-width: 30%;
+    margin: 0 50px;
+    margin-right: 0px;
+}
+
+@media (max-width: 981px) {
+    .Foodsafepackaging-page-container{
+        flex-direction: column;
+        margin: 0 30px;
+        margin-top: 100px;
+    }
+    .iso22000-image{
+        max-width: 100%;
+        margin: auto;
+        margin-right: 0px;
+    }
+    .Foodsafe-Article{
+        padding-right: 0px;
+        margin-left: 0px;
+        font-size: 20px;
+    }
+}

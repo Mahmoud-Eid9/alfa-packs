@@ -1,24 +1,78 @@
 .HomeProducts{
     display: flex;
-    width: 80%;
     justify-content: space-between;
+    align-items: end;
+    width: 100%;
     margin: auto;
-    margin-top: 80px;
+}
+.HomeProducts-containers{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 60%;
+    margin: auto;
+}
+.products-product-container-cups{
+    margin: 80px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.homeproducts-flex-buttons-container{
+    display: flex;
+    gap: 80px;
 }
 
+.lrnbtn-products{
+    width: 200px;
+    border: 2px solid rgb(0, 0, 0, 0.4);
+    color: black;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 20px;
+    transition: 0.3s ease-in;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 50px;
+}
+.lrnbtn-products:hover{
+    border: 2px solid blue;
+}
+
+
+.products-product-container-containers{
+    display: flex;
+
+    min-width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.products-product-container-cups h3, .products-product-container-containers h3{
+    text-align: center;
+    font-size: 30px;
+}
+.products-product-container-containers img{
+    max-width: 300px;
+}
 #products{
-    margin-top: 200px;
-    margin-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
+.HomeProducts-services{
+    min-width: 95%;
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
 
 .sectionTitle {
     margin: 0.5rem 0 ;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     position: relative;
     display: inline-block;
@@ -33,4 +87,24 @@
     border-radius: 70px;
     height: 4px;
     background: #1245bb;
+}
+
+@media (max-width: 981px) {
+    .HomeProducts{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        margin-top: 80px;
+    }
+    .homeproducts-flex-buttons-container{
+        flex-direction: column;
+        gap: 0px!important;
+    }
+    .HomeProducts-services{
+        display: flex;
+        flex-direction: column;
+    }
 }

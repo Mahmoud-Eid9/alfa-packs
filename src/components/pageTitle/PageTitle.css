@@ -1,11 +1,24 @@
 .PageTitle{
     position: absolute;
-    padding: 20px;
-    padding-left: 120px;
+
+    padding: 20px 120px;
     top: 0;
     left: 0;
-    margin-top: 120px;
+    margin-top: 100px;
     background-color: #202020;
     width: 100%;
     color: #FAFAFA;
+}
+.PageTitle a {
+    text-decoration: none;
+    color: #FAFAFA;
+}
+.PageTitle a:hover{
+    color: #FAFAFA;
+}
+@media (max-width: 981px) {
+    .PageTitle{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }

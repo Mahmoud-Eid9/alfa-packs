@@ -1,0 +1,50 @@
+.contactus-section-container{
+    background: #D7E7F5;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contactus-home-title{
+    margin: auto;
+}
+.contactus-home-header-container{
+    margin: auto;
+}
+.contactus-button-link-home{
+    text-decoration: none;
+    color: white;
+    padding: 0;
+    margin: auto;
+    text-decoration : none ;
+    font-size : 15px ; 
+    font-weight : bold ;
+    letter-spacing : 3px ;
+    transition : all .3s ease ;
+    border: 2px solid #202020;
+    padding: 25px 100px;
+    background-image: linear-gradient(30deg, #202020 50%, transparent 50%);
+    background-size: 760px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    transition: background 300ms ease-in-out;
+    transition:  0.3s ease-in-out;
+}
+.contactus-button-link-home:hover {
+    background-position: 100%;
+    color: black;
+    background-color: transparent;
+  }
+  
+
+  @media (max-width: 981px) {
+    .contactus-section-container{
+        flex-direction: column;
+    }
+    
+    .contactus-home-title{
+        padding: 0 30px;
+    }
+}
