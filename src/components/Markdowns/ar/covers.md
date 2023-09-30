@@ -2,7 +2,7 @@
 ---
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.توفر الشركة أنواع مختلفة من الأغطية لكل أحجام الأكواب والعلب وكذلك المستلزمات الأخرى مثل الأستيلر والسكر والمعالق
 
-<a class="navlink" href="/">Back</a>
+<a class="navlink" href="/">الرجوع</a>
 
 <style>
 .navlink{

@@ -14,6 +14,15 @@
     justify-content: space-between;
     margin: 100px;
 }
+.products-title-img-flex-container{
+    width: 100%;
+    display: flex;
+    margin-left: 50px;
+    justify-content: space-between;
+}
+.container-img{
+    width: 50%;
+}
 .products-text-container{
     margin: 50px;
     display: flex;
@@ -22,6 +31,10 @@
     justify-content: space-between;
     height: fit-content;
     align-self: right;
+}
+.images-container{
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-card{
@@ -42,6 +55,18 @@
     .products-text-container{
         margin: auto!important;
         width: 95%;
+    }
+    .products-title-img-flex-container{
+        margin: 0;
+        direction: rtl;
+        flex-direction: column-reverse;
+    }
+    .images-container{
+        flex-direction: row;
+        padding: 10px;
+    }
+    .container-img{
+        width: 50%;
     }
    .contact-card{
     width: 100%;
