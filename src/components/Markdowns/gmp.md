@@ -7,6 +7,12 @@ GMP is a prerequisite program for ISO 19001 & ISO 22000 and aim to guarantee qua
 <style>
 .navlink{
   direction: rtl;
-  display: block;
+  display: inline-block;
+  font-size: 16px;
+  background-color: #FF0000;
+  padding: 7px 15px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
 }
 </style>

@@ -13,17 +13,19 @@ const ProductsContainers = (props) => {
     const {t, i18n} = useTranslation()
     const sidebarItems = [{ title: t("homeproducts.cups"), link: "/products/cups" }, { title: t("homeproducts.containers"), link: "/products/containers" }, { title: t("homeproducts.covers"), link: "/products/covers" }]
     
+    
     return (<>
 <PageTitle title={props.title} />
+
         {i18n.language === "ar" ? (
-            <div className='products-flex-container'>
-         <ContactCard className="contact-card"/>
+        <div className='Article-container'>
+            <SideBar className='Contactsidebar' sidebarItems={sidebarItems} />
         <div className='products-text-container'>
         <h3 className={i18n.language === "ar" ? "sectionTitlearabic" : "sectionTitle"}>
         {t("homeproducts.services.titles.customdesign") }
         </h3>
         <p>
-        {t("homeproducts.services.description.customdesign") }
+        {t("homeproducts.services.description.customdesigncontainer") }
         </p>
         <h3 className={i18n.language === "ar" ? "sectionTitlearabic" : "sectionTitle"}>
         {t("homeproducts.services.titles.readymade") }
@@ -46,13 +48,14 @@ const ProductsContainers = (props) => {
         </div>
         </div>
         ) : (
-            <div className='products-flex-container'>
+            <div className='Article-container'>
+                <SideBar className='Contactsidebar' sidebarItems={sidebarItems} />
         <div className='products-text-container'>
         <h3 className={i18n.language === "ar" ? "sectionTitlearabic" : "sectionTitle"}>
         {t("homeproducts.services.titles.customdesign") }
         </h3>
         <p>
-        {t("homeproducts.services.description.customdesign") }
+        {t("homeproducts.services.description.customdesigncontainer") }
         </p>
         <h3 className={i18n.language === "ar" ? "sectionTitlearabic" : "sectionTitle"}>
         {t("homeproducts.services.titles.readymade") }
@@ -73,7 +76,7 @@ const ProductsContainers = (props) => {
             {t("products.sizes.containers")}
             </h5>
         </div>
-         <ContactCard className="contact-card"/>
+        
          </div>
         )}
    

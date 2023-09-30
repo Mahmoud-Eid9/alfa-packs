@@ -61,6 +61,8 @@
     .Sidebar-link{
         border-bottom: none;
         text-align: center;
+        color: #0A58CA;
+        text-decoration: underline;
         margin: 0;
         min-width: 100px;
         margin-left: 10px;

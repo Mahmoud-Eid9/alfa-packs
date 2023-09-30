@@ -15,12 +15,13 @@
                 "customdesign": "Custom Design",
                 "readymade": "Ready Made Designs",
                 "plain": "Plain",
-                "occasions": "Holidays and Ocaasions",
+                "occasions": "Holidays and Occasions",
                 "covers": "Covers"
             },
             "description":{
-                "customdesign": "Custom designs made for coffe shops, restaurants, hotels, companies and occasions",
-                "readymade": "customers can choose for a variety of ready made designs",
+                "customdesign": "Custom designs made for coffee shops, restaurants, hotels, companies and occasions",
+                "customdesigncontainer": "Custom designs made fore Restaurants, Hotels and Occasions",
+                "readymade": "Customers can choose from a variety of ready made designs",
                 "plain": "used in making \"double cups\" and some customers use them after putting their logo",
                 "occasions": "Designs made for various occasions and holidays",
                 "covers": "Alfa Pack provides covers for all cups with different sizes"

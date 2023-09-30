@@ -9,6 +9,7 @@ import { useHistory } from "react-router-dom";
 import parse from 'html-react-parser'
 import { ToggleButton } from '@mui/material';
 import { ToggleButtonGroup } from '@mui/material';
+import { Style } from '@mui/icons-material';
 
 const NavBar = () => {
     
@@ -102,7 +103,7 @@ const NavBar = () => {
                 <Navbar.Toggle onClick={toggleMenu} aria-controls="basic-navbar-nav" />
 
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="ms-auto mainNav" activeKey="/home">
+                    <Nav className="ms-auto mainNav" dir={ i18n.language === "ar" ? "rtl" : "ltr"} activeKey="/home">
                         <Nav.Item>
                             <NavLink to='/' data-toggle="collapse"
                                 data-target="#navbarCollapse" className="nav-link" onClick={closeMenu}>{t("navbar.home")}</NavLink>

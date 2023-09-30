@@ -8,6 +8,12 @@ Alpha Pak takes pride in maintaining the highest standards of hygiene in our ope
 <style>
 .navlink{
   direction: rtl;
-  display: block;
+  display: inline-block;
+  font-size: 16px;
+  background-color: #FF0000;
+  padding: 7px 15px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
 }
 </style>

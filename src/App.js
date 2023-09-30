@@ -25,6 +25,11 @@ function App() {
     { title: t("navbar.foodsafe.haccp"), link: "/foodsafe/haccp" },
     { title: t("navbar.foodsafe.iso22000"), link: "/foodsafe/iso22000" }
   ]
+  const covers = [
+    { title: parse(t("navbar.products.cups")), link: "/products/cups" },
+    { title: parse(t("navbar.products.containers")), link: "/products/containers" },
+    { title: parse(t("navbar.products.covers")), link: "/products/covers" }
+  ]
   useEffect(() => {
     if (i18n.language === "ar") {
       document.body.style.textAlign = "right";
@@ -49,6 +54,7 @@ function App() {
         <Route path="/products" exact render={(props) => <ProductsCups product="Cups.json" title={parse(t("products.cups"))} />} />
         <Route path="/products/cups" exact render={(props) => <ProductsCups product="Cups.json" title={parse(t("products.cups"))} />} />
         <Route path="/products/containers" exact render={(props) => <ProductsContainers product="Containers.json" title={parse(t("products.containers"))} />} />
+        <Route path="/products/covers" exact render={(props) => <Article article="covers.md" sideBarData={covers} title={parse(t("products.covers"))} />} />
         {/* <Route path="/products/covers" exact render={(props) => <Products product="Covers.json" title={parse(t("products.covers"))} />} /> */}
         <Route path="*" component={Home} />
       </Switch>

@@ -12,12 +12,13 @@
 .products-flex-container{
     display: flex;
     justify-content: space-between;
-    margin-top: 75px;
+    margin: 100px;
 }
 .products-text-container{
     margin: 50px;
     display: flex;
     flex-direction: column;
+    width: 70vh;
     justify-content: space-between;
     height: fit-content;
     align-self: right;
@@ -37,6 +38,10 @@
     }
     .products-flex-container{
         flex-direction: column;
+    }
+    .products-text-container{
+        margin: auto!important;
+        width: 95%;
     }
    .contact-card{
     width: 100%;

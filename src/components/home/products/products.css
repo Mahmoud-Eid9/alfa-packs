@@ -67,7 +67,7 @@
     min-width: 95%;
     display: flex;
     margin-top: 50px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .sectionTitle {
