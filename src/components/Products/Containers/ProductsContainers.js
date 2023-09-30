@@ -8,8 +8,10 @@ import { useTranslation } from 'react-i18next'
 import Gallery from '../../Gallery/Gallery';
 import { NavLink } from 'react-router-dom';
 import ContactCard from '../../ContactCard/ContactCard';
+import { useHistory } from "react-router-dom";
 
 const ProductsContainers = (props) => {
+    const history = useHistory();
     const { t, i18n } = useTranslation()
     const sidebarItems = [{ title: t("homeproducts.cups"), link: "/products/cups" }, { title: t("homeproducts.containers"), link: "/products/containers" }, { title: t("homeproducts.covers"), link: "/products/covers" }]
 
@@ -21,10 +23,11 @@ const ProductsContainers = (props) => {
         {i18n.language === "ar" ? (
             <div className='Article-container'>
                 <SideBar className='Contactsidebar' sidebarItems={sidebarItems} />
-                <div className='products-title-img-flex-container'>
+                <div className='products-title-img-flex-container-containers'>
                     <div className='images-container'>
                         <img src='images/containers/container-img.jpg' className='container-img' />
                         <img src='images/containers/container-img.jpg' className='container-img' />
+                        <button className='backbtn' onClick={() => history.push("/")}>{t("back")}</button>
                     </div>
                     <div className='products-text-container'>
                         <h3 className={i18n.language === "ar" ? "sectionTitlearabic" : "sectionTitle"}>
@@ -57,10 +60,11 @@ const ProductsContainers = (props) => {
         ) : (
             <div className='Article-container'>
                 <SideBar className='Contactsidebar' sidebarItems={sidebarItems} />
-                <div className='products-title-img-flex-container'>
+                <div className='products-title-img-flex-container-containers'>
                     <div className='images-container'>
                         <img src='images/containers/container-img.jpg' className='container-img' />
                         <img src='images/containers/container-img.jpg' className='container-img' />
+                        <button className='backbtn' onClick={() => history.push("/")}>{t("back")}</button>
                     </div>
                     <div className='products-text-container'>
                         <h3 className={i18n.language === "ar" ? "sectionTitlearabic" : "sectionTitle"}>
@@ -87,9 +91,9 @@ const ProductsContainers = (props) => {
                         <h5>
                             {t("products.sizes.containers")}
                         </h5>
+                        
                     </div>
                 </div>
-
             </div>
         )}
 
@@ -98,7 +102,7 @@ const ProductsContainers = (props) => {
 
         {/* <div className='Article-container'>
         <PageTitle title={props.title} />
-
+        
         <SideBar className='sidebar-products' sidebarItems={sidebarItems} />
         <div className='productspage-products-container'>
         {productsData.map((element, index) => {
@@ -106,7 +110,8 @@ const ProductsContainers = (props) => {
         })}
         </div>
     </div> */}
-        <Gallery path='../../../public/images/cups/gallery' />
+        {/* <Gallery path='../../../public/images/cups/gallery' /> */}
+    
         <Footer />
     </>
     );

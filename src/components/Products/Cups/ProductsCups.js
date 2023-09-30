@@ -127,7 +127,7 @@ const ProductsCups = (props) => {
     </div> */}
         </div>
 
-        <Gallery path='../../../public/images/cups/gallery' />
+        {/* <Gallery path='../../../public/images/cups/gallery' /> */}
         <Footer />
     </>
     );

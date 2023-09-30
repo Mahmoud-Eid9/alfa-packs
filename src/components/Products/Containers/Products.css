@@ -21,7 +21,9 @@
     justify-content: space-between;
 }
 .container-img{
-    width: 50%;
+    width: 100%;
+    max-width: 250px;
+    min-width: none;
 }
 .products-text-container{
     margin: 50px;
@@ -35,6 +37,8 @@
 .images-container{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-card{
@@ -56,7 +60,7 @@
         margin: auto!important;
         width: 95%;
     }
-    .products-title-img-flex-container{
+    .products-title-img-flex-container-containers{
         margin: 0;
         direction: rtl;
         flex-direction: column-reverse;

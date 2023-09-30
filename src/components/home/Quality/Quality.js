@@ -19,7 +19,7 @@ const QualityHome = () => {
     const history = useHistory();
     return ( 
     <div className='quality-home-container'>
-        <div className='images-container'>
+        <div className='images-container-quality'>
         <div className='left-quality'>
         <div className='Backdrop-quality' onClick={() => history.push("/quality")}>
         <h2 className={isArabic ? "arabic-title": "english-title"}>{parse(t("homequality.quality"))}</h2>

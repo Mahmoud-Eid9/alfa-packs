@@ -58,16 +58,6 @@ const HomeProducts = () => {
                 })}
             </div>
             <NavLink className="lrnbtn-products" to="/products/containers">{t("homeproducts.more")}</NavLink>
-            <div className='HomeProducts-services'>
-                <HomeProduct image="images/container-img.jpg" title={t("homeproducts.services.titles.customdesign")} link="/products/cups" />
-                <HomeProduct image={"images/container-img.jpg"} title={t("homeproducts.services.titles.readymade")} link="/products/cups" />
-                <HomeProduct image={"images/container-img.jpg"} title={t("homeproducts.services.titles.plain")} link="/products/cups" />
-                <HomeProduct image={"images/container-img.jpg"} title={t("homeproducts.services.titles.occasions")} link="/products/cups" />
-            </div>
-            <div style={{display: "flex", gap: "80px"}} className='homeproducts-flex-buttons-container'>
-                <NavLink className="lrnbtn-products" to="/products/containers">{t("homeproducts.containers")}</NavLink>
-                <NavLink className="lrnbtn-products" to="/products/cups">{t("homeproducts.cups")}</NavLink>
-            </div>
         </div>
     </section>
     );
