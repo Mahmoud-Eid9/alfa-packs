@@ -27,7 +27,7 @@ const ProductsContainers = (props) => {
                     <div className='images-container'>
                         <img src='images/containers/container-img.jpg' className='container-img' />
                         <img src='images/containers/container-img.jpg' className='container-img' />
-                        <button className='backbtn' onClick={() => history.push("/")}>{t("back")}</button>
+                       
                     </div>
                     <div className='products-text-container'>
                         <h3 className={i18n.language === "ar" ? "sectionTitlearabic" : "sectionTitle"}>
@@ -55,8 +55,11 @@ const ProductsContainers = (props) => {
                             {t("products.sizes.containers")}
                         </h5>
                     </div>
+                    
                 </div>
             </div>
+                
+            
         ) : (
             <div className='Article-container'>
                 <SideBar className='Contactsidebar' sidebarItems={sidebarItems} />
@@ -111,7 +114,7 @@ const ProductsContainers = (props) => {
         </div>
     </div> */}
         {/* <Gallery path='../../../public/images/cups/gallery' /> */}
-    
+        <button className='backbtn' onClick={() => history.push("/")}>{t("back")}</button>
         <Footer />
     </>
     );
