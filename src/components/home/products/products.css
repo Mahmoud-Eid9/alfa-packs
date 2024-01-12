@@ -99,6 +99,10 @@
         margin: auto;
         margin-top: 80px;
     }
+    .HomeProducts-containers{
+        gap: 50px;
+        width: 80%;
+    }
     .homeproducts-flex-buttons-container{
         flex-direction: column;
         gap: 0px!important;

@@ -17,7 +17,8 @@
 .products-title-img-flex-container-containers{
     width: 100%;
     display: flex;
-    margin-left: 50px;
+    margin: 0 50px;
+    margin-right: 100px;
     justify-content: space-between;
 }
 .container-img{
@@ -62,7 +63,7 @@
     }
     .products-title-img-flex-container-containers{
         margin: 0;
-        direction: rtl;
+        direction: ltr;
         flex-direction: column-reverse;
     }
     .images-container{

@@ -194,15 +194,5 @@ html:not([data-scroll='0']) .navDefault {
     color: black !important;
   }
 
-  html:not([data-scroll='0']) .nav-link {
-    color: #070120 !important;
-  }
-
-  html:not([data-scroll='0']) .brnIcon {
-    margin: auto !important;
-    min-height: 47px;
-    min-width: 120px;
-    padding: 0 !important;
-  }
 
 }
