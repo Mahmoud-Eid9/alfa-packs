@@ -10,8 +10,8 @@ const Hero = () => {
     <div className='Hero'>
       <div className='Backdrop' >
         <div className='iso-certified-images'>
-          <img className='iso-certified' src='images/iso-9001-certified.png' />
-          <img className='iso-certified' src='images/iso-22000-certified.png' />
+          <img className='iso-certified' src='images/iso-9001-certified.webp' />
+          <img className='iso-certified' src='images/iso-22000-certified.webp' />
         </div>
         <div className='Hero-Title'>
           {t("hero.title")}

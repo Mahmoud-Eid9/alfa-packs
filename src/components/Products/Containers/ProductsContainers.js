@@ -5,7 +5,6 @@ import SideBar from '../../SideBar/SideBar';
 import Footer from '../../Footer/Footer';
 import Product from '../Product/Product';
 import { useTranslation } from 'react-i18next'
-import Gallery from '../../Gallery/Gallery';
 import { NavLink } from 'react-router-dom';
 import ContactCard from '../../ContactCard/ContactCard';
 import { useHistory } from "react-router-dom";
@@ -25,9 +24,9 @@ const ProductsContainers = (props) => {
                 <SideBar className='Contactsidebar' sidebarItems={sidebarItems} />
                 <div className='products-title-img-flex-container-containers'>
                     <div className='images-container'>
-                        <img src='images/containers/container-img.jpg' className='container-img' />
-                        <img src='images/containers/container-img.jpg' className='container-img' />
-                       
+                        <img src='images/containers/container-img.webp' className='container-img' />
+                        <img src='images/containers/container-img.webp' className='container-img' />
+
                     </div>
                     <div className='products-text-container'>
                         <h3 className={i18n.language === "ar" ? "sectionTitlearabic" : "sectionTitle"}>
@@ -55,11 +54,11 @@ const ProductsContainers = (props) => {
                             {t("products.sizes.containers")}
                         </h5>
                     </div>
-                    
+
                 </div>
             </div>
-                
-            
+
+
         ) : (
             <div className='Article-container'>
                 <SideBar className='Contactsidebar' sidebarItems={sidebarItems} />
@@ -93,8 +92,8 @@ const ProductsContainers = (props) => {
                         <button className='backbtn' onClick={() => history.push("/")}>{t("back")}</button>
                     </div>
                     <div className='images-container'>
-                        <img src='images/containers/container-img.jpg' className='container-img' />
-                        <img src='images/containers/container-img.jpg' className='container-img' />
+                        <img src='images/containers/container-img.webp' className='container-img' />
+                        <img src='images/containers/container-img.webp' className='container-img' />
 
                     </div>
                 </div>
@@ -114,7 +113,6 @@ const ProductsContainers = (props) => {
         })}
         </div>
     </div> */}
-        {/* <Gallery path='../../../public/images/cups/gallery' /> */}
         <Footer />
     </>
     );

@@ -3,7 +3,6 @@ import './Products.css'
 import PageTitle from '../../pageTitle/PageTitle';
 import Footer from '../../Footer/Footer';
 import { useTranslation } from 'react-i18next'
-import Gallery from '../../Gallery/Gallery';
 import ContactCard from '../../ContactCard/ContactCard';
 import { useHistory } from "react-router-dom";
 import SideBar from '../../SideBar/SideBar';
@@ -16,19 +15,19 @@ const ProductsCups = (props) => {
         {
             title: t("homeproducts.services.titles.customdesign"),
             description: t("homeproducts.services.description.customdesign"),
-            images: ["images/cups/custom-made1.png", "images/cups/custom-made2.png"]
+            images: ["images/cups/custom-made1.webp", "images/cups/custom-made2.webp"]
         }, {
             title: t("homeproducts.services.titles.readymade"),
             description: t("homeproducts.services.description.readymade"),
-            images: ["images/cups/ready-made1.png", "images/cups/ready-made2.png"]
+            images: ["images/cups/ready-made1.webp", "images/cups/ready-made2.webp"]
         }, {
             title: t("homeproducts.services.titles.occasions"),
             description: t("homeproducts.services.description.occasions"),
-            images: ["images/cups/occasion1.png", "images/cups/occasion2.png"]
+            images: ["images/cups/occasion1.webp", "images/cups/occasion2.webp"]
         }, {
             title: t("homeproducts.services.titles.plain"),
             description: t("homeproducts.services.description.plain"),
-            images: ["images/cups/plain.png"]
+            images: ["images/cups/plain.webp"]
         }, {
             title: t(t("products.sizes.title")),
             description: t("products.sizes.cups"),
@@ -127,7 +126,6 @@ const ProductsCups = (props) => {
     </div> */}
         </div>
 
-        {/* <Gallery path='../../../public/images/cups/gallery' /> */}
         <Footer />
     </>
     );
