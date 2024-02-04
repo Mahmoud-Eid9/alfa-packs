@@ -62,7 +62,7 @@ const ProductsCups = (props) => {
 
                                                 element.images.map((img, ind) => {
 
-                                                    return <img className='products-title-img' src={img} />
+                                                    return <img className='products-title-img' alt='paper-cup' src={img} />
                                                 })
                                             }
                                         </div>
@@ -95,7 +95,7 @@ const ProductsCups = (props) => {
 
                                                 element.images.map((img, ind) => {
 
-                                                    return <img className='products-title-img' src={img} />
+                                                    return <img className='products-title-img' alt='paper-cup' src={img} />
                                                 })
                                             }
                                         </div>

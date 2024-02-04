@@ -8,6 +8,7 @@ import Footer from '../Footer/Footer';
 import swal from 'sweetalert';
 import emailjs from '@emailjs/browser';
 import { useTranslation } from 'react-i18next';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Contactus = () => {
     const { t, i18n } = useTranslation()
@@ -96,7 +97,7 @@ const Contactus = () => {
                     {t("contactus.send")}
                 </button>
             </form>
-            <img className='contactus-img' src='images/contactus-image.webp' />
+            <LazyLoadImage className='contactus-img' alt='cups-image-contactus' src='images/contactus-image.webp' />
         </div>
         <Footer />
     </div>

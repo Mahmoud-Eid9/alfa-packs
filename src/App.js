@@ -9,7 +9,6 @@ import Article from './components/Article/Article';
 import Contactus from './components/Contactus/Contactus';
 import ProductsCups from './components/Products/Cups/ProductsCups';
 import ProductsContainers from './components/Products/Containers/ProductsContainers';
-import FoodSafePackaging from './components/FoodSafePackaging/FoodSafePackaging';
 import { useTranslation } from 'react-i18next';
 import { useEffect } from 'react';
 import parse from 'html-react-parser'

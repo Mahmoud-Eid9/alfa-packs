@@ -6,7 +6,7 @@ import {useTranslation} from 'react-i18next'
 const HomeProduct = (props) => {
     const {t} = useTranslation()
     return ( <div className='HomeProduct'>
-        <img className='HomeProductimg' src={`/${props.image}`}/>
+        <img className='HomeProductimg' alt='Paper-product' src={`/${props.image}`}/>
         <h5>{props.title}</h5>
     </div> );
 }

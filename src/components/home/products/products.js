@@ -25,23 +25,16 @@ const HomeProducts = () => {
         <div className='products-product-container-cups'>
             <h3>{t("homeproducts.cups")}</h3>
             <div className='HomeProducts'>
-                {/* <HomeProduct image="images/cup-img.webp" title={t("homeproducts.cups")} link="/products/cups" />
-        <HomeProduct  image={"images/container-img.webp"} title={t("homeproducts.containers")} link="/products/containers"/>
-    <HomeProduct   image={"images/cover-img.webp"} title={t("homeproducts.covers")} link="/products/covers"/> */}
                 {cupsUrls.map((item, index) => {
                     return (
                         <div key={index}>
-                            <img style={{ width: "100%" }} src={item.url} />
-                            <h5 style={{ textAlign: "center" }}>{item.title}</h5>
+                            <img key={index} alt="Paper-Product" style={{ width: "100%" }} src={item.url} />
+                            <h5 key={index} style={{ textAlign: "center" }}>{item.title}</h5>
                         </div>
                     )
                 })}
             </div>
-            {/* <div className='HomeProducts-services'>
-    <HomeProduct image="images/cups/custom-made.webp" title={t("homeproducts.services.titles.customdesign")} link="/products/cups" />
-    <HomeProduct image={"images/cups/8oz.webp"} title={t("homeproducts.services.titles.readymade")} link="/products/cups" />
-    <HomeProduct image={"images/cups/10oz.webp"} title={t("homeproducts.services.titles.plain")} link="/products/cups" />
-    </div> */}
+
             <NavLink className="lrnbtn-products" to="/products/cups">{t("homeproducts.more")}</NavLink>
         </div>
 
@@ -51,8 +44,8 @@ const HomeProducts = () => {
                 {containersUrl.map((item, index) => {
                     return (
                         <div key={index}>
-                            <img style={{ width: "100%" }} src={item.url} />
-                            <h5 style={{ textAlign: "center" }}>{item.title}</h5>
+                            <img key={index} style={{ width: "100%" }} alt="Paper-Product" src={item.url} />
+                            <h5 key={index} style={{ textAlign: "center" }}>{item.title}</h5>
                         </div>
                     )
                 })}

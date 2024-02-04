@@ -8,7 +8,11 @@ const Spinner = () => {
       width="80"
       color="black"
       ariaLabel="triangle-loading"
-      wrapperStyle={{}}
+      wrapperStyle={{
+        position: "fixed",
+        left: "50%",
+        top: "50%"
+      }}
       wrapperClassName=""
       visible={true}
     />

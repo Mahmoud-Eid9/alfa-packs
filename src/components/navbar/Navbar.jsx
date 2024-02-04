@@ -73,7 +73,7 @@ const NavBar = () => {
     return (<div className='navbar-container'>
         <Navbar expanded={menuOpen} className={`navbar navbar-expand-lg navbar-light  navDefault`} expand="lg">
             <Container>
-                <Navbar.Brand as={Link} to="/" onClick={scrollTop} className="navBrn">
+                <Navbar.Brand as={Link} to="/" onClick={scrollTop} aria-label="Got Back to Home" className="navBrn">
                     <div className="brnIcon" />
 
                 </Navbar.Brand>
@@ -109,7 +109,7 @@ const NavBar = () => {
                                 data-target="#navbarCollapse" className="nav-link" onClick={closeMenu}>{t("navbar.home")}</NavLink>
                         </Nav.Item>
                         <NavDropdown
-                            title={t("navbar.products.title")} id="basic-nav-dropdown">
+                            title={t("navbar.products.title")} id="basic-nav-dropdown-1">
                             <NavDropdown.Item><NavLink to="/products/cups" onClick={closeMenu} className="nav-drop">{t("navbar.products.cups")}</NavLink></NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item><NavLink to="/products/containers" onClick={closeMenu} className="nav-drop">{t("navbar.products.containers")}</NavLink></NavDropdown.Item>
@@ -120,7 +120,7 @@ const NavBar = () => {
                             <Nav.Link href="#testimonial" className="nav-link">Reviews</Nav.Link>
                         </Nav.Item> */}
                         <NavDropdown title={t("navbar.quality.title")}
-                            id="basic-nav-dropdown">
+                            id="basic-nav-dropdown-2">
                             <NavDropdown.Item><NavLink to="/quality" onClick={closeMenu} className="nav-drop">{t("navbar.quality.outline")}</NavLink></NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item><NavLink to="/quality/gmp" onClick={closeMenu} className="nav-drop">{parse(t("navbar.quality.gmp"))}</NavLink></NavDropdown.Item>
@@ -131,7 +131,7 @@ const NavBar = () => {
                         </NavDropdown>
                         <NavDropdown
                             title={t("navbar.foodsafe.title")}
-                            id="basic-nav-dropdown">
+                            id="basic-nav-dropdown-3">
                             <NavDropdown.Item ><NavLink to="/food-safe-packaging" onClick={closeMenu} className="nav-drop">{t("navbar.foodsafe.outline")}</NavLink></NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item ><NavLink to="/foodsafe/ghs" onClick={closeMenu} className="nav-drop">{t("navbar.foodsafe.ghs")}</NavLink></NavDropdown.Item>
