@@ -5,17 +5,15 @@ To demonstrate our commitment to food safety, we’ve obtained the ISO 22000 cer
 And because we put export as one of our most important goals, the Egyptian Food Safety Authority visits the factory periodically and takes samples of the products to analyze them and ensure their food safe  grade.
 By prioritizing food safety and quality, we’ve earned the trust of our customers, who can rely on our products to transport and store their food safely without the risk of contamination.
 
-<a class="navlink" href="/">Back</a>
+<a class="backbtn" href="/">Back</a>
 
 <style>
-.navlink{
+.backbtn{
   direction: rtl;
   display: inline-block;
-  font-size: 16px;
-  background-color: #FF0000;
-  padding: 7px 15px;
-  color: white;
   text-decoration: none;
   border-radius: 5px;
+  margin: 0!important;
+  text-align: center;
 }
 </style>

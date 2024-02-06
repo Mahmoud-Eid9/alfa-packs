@@ -11,17 +11,15 @@ We perform quality control every hour. If we detect a defect, then all products 
 since the last successful test are rejected. Thus, a possibility of delivering a faulty product
 to a customer is reduced to zero.
 
-<a class="navlink" href="/">Back</a>
+<a class="backbtn" href="/">Back</a>
 
 <style>
-.navlink{
+.backbtn{
   direction: rtl;
   display: inline-block;
-  font-size: 16px;
-  background-color: #FF0000;
-  padding: 7px 15px;
-  color: white;
   text-decoration: none;
   border-radius: 5px;
+  margin: 0!important;
+  text-align: center;
 }
 </style>

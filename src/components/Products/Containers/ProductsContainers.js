@@ -24,8 +24,8 @@ const ProductsContainers = (props) => {
                 <SideBar className='Contactsidebar' sidebarItems={sidebarItems} />
                 <div className='products-title-img-flex-container-containers'>
                     <div className='images-container'>
-                        <img src='images/containers/container-img.webp' alt='paper-container' className='container-img' />
-                        <img src='images/containers/container-img.webp' alt='paper-container' className='container-img' />
+                        <img src='images/containers/container-20oz.webp' alt='paper-container' className='container-img' />
+                        <img src='images/containers/container-30oz.webp' alt='paper-container' className='container-img' />
 
                     </div>
                     <div className='products-text-container'>
@@ -92,8 +92,8 @@ const ProductsContainers = (props) => {
                         <button className='backbtn' onClick={() => history.push("/")}>{t("back")}</button>
                     </div>
                     <div className='images-container'>
-                        <img src='images/containers/container-img.webp' alt='paper-container' className='container-img' />
-                        <img src='images/containers/container-img.webp' alt='paper-container' className='container-img' />
+                        <img src='images/containers/container-20oz.webp' alt='paper-container' className='container-img' />
+                        <img src='images/containers/container-30oz.webp' alt='paper-container' className='container-img' />
 
                     </div>
                 </div>

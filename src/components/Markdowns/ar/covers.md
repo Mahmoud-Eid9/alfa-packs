@@ -2,17 +2,15 @@
 ---
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.توفر الشركة أنواع مختلفة من الأغطية لكل أحجام الأكواب والعلب وكذلك المستلزمات الأخرى مثل الأستيلر والسكر والمعالق
 
-<a class="navlink" href="/">الرجوع</a>
+<a class="backbtn" href="/">الرجوع</a>
 
 <style>
-.navlink{
+.backbtn{
   direction: rtl;
   display: inline-block;
-  font-size: 16px;
-  background-color: #FF0000;
-  padding: 7px 15px;
-  color: white;
   text-decoration: none;
   border-radius: 5px;
+  margin: 0!important;
+  text-align: center;
 }
 </style>

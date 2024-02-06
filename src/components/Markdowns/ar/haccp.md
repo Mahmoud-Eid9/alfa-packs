@@ -21,17 +21,15 @@
   direction: rtl;
 }
 </style>
-<a class="navlink" href="/food-safe-packaging">الرجوع</a>
+<a class="backbtn" href="/food-safe-packaging">الرجوع</a>
 
 <style>
-.navlink{
+.backbtn{
   direction: rtl;
   display: inline-block;
-  font-size: 16px;
-  background-color: #FF0000;
-  padding: 7px 15px;
-  color: white;
   text-decoration: none;
   border-radius: 5px;
+  margin: 0!important;
+  text-align: center;
 }
 </style>

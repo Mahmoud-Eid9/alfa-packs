@@ -14,17 +14,14 @@ Moreover, the establishment of an annual self-revision program helps ensure that
 
 Overall, the implementation of HACCP provides a comprehensive approach to food safety and quality management. It involves identifying potential hazards and taking measures to prevent them from occurring, resulting in a safe and high-quality product.
 
-<a class="navlink" href="/food-safe-packaging">Back</a>
-
+<a class="backbtn" href="/food-safe-packaging">Back</a>
 <style>
-.navlink{
+.backbtn{
   direction: rtl;
   display: inline-block;
-  font-size: 16px;
-  background-color: #FF0000;
-  padding: 7px 15px;
-  color: white;
   text-decoration: none;
   border-radius: 5px;
+  margin: 0!important;
+  text-align: center;
 }
 </style>

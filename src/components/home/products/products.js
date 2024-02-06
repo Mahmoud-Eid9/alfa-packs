@@ -18,8 +18,8 @@ const HomeProducts = () => {
         { title: t("products.14ozcup"), url: "images/cups/14oz.webp" }
     ]
     const containersUrl = [
-        { title: t("products.20ozcontainer"), url: "images/containers/container-img.webp" },
-        { title: t("products.30ozcontainer"), url: "images/containers/container-img.webp" }
+        { title: t("products.20ozcontainer"), url: "images/containers/container-20oz.webp" },
+        { title: t("products.30ozcontainer"), url: "images/containers/container-30oz.webp" }
     ]
     return (<section id='products'>
         <div className='products-product-container-cups'>

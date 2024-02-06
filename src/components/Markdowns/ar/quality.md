@@ -5,17 +5,15 @@
 شكاوى العملاء. اى انتاج معلوم ومسجل نوعية الورق والاكياس والكراتين المستخدمة ومصدرها وتاريخ ادخالها المصنع واسماء العمال الذين
 اشتركوا فى انتاجها. نطبق اختبارات الجودة كل ساعة وعندما يكتشف عيب يتم تجنيب كل الإنتاج منذ آخر إختبار للفحص الدقيق وبالتالي يكاد ينعدم إحتمالية تسليم منتج غير مطابق للمواصفات
 
-<a class="navlink" href="/">الرجوع</a>
+<a class="backbtn" href="/">الرجوع</a>
 
 <style>
-.navlink{
+.backbtn{
   direction: rtl;
   display: inline-block;
-  font-size: 16px;
-  background-color: #FF0000;
-  padding: 7px 15px;
-  color: white;
   text-decoration: none;
   border-radius: 5px;
+  margin: 0!important;
+  text-align: center;
 }
 </style>
