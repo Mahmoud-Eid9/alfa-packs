@@ -12,6 +12,7 @@
     align-items: end;
     width: 60%;
     margin: auto;
+    margin-top: 50px;
 }
 
 .products-product-container-cups {
@@ -149,6 +150,11 @@
         align-items: center;
         margin: auto;
         margin-top: 80px;
+    }
+
+    .lrnbtn-products{
+        width: 110px;
+        font-size: 15px;
     }
 
     .HomeProducts-containers {

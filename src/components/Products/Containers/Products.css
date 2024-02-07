@@ -1,4 +1,4 @@
-.productspage-products-container{
+.productspage-products-container {
     width: 100%;
     padding: 0 20px;
     margin-top: 50px;
@@ -9,24 +9,28 @@
     column-gap: 25px;
     row-gap: 25px;
 }
-.products-flex-container{
+
+.products-flex-container {
     display: flex;
     justify-content: space-between;
     margin: 100px;
 }
-.products-title-img-flex-container-containers{
+
+.products-title-img-flex-container-containers {
     width: 100%;
     display: flex;
     margin: 0 50px;
     margin-right: 100px;
     justify-content: space-between;
 }
-.container-img{
+
+.container-img {
     width: 100%;
     max-width: 250px;
     min-width: none;
 }
-.products-text-container{
+
+.products-text-container {
     margin: 50px;
     display: flex;
     flex-direction: column;
@@ -35,45 +39,83 @@
     height: fit-content;
     align-self: right;
 }
-.images-container{
+
+.images-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 50px;
     align-items: center;
+
 }
 
-.contact-card{
-    max-width: 220px!important;
-   }
-.sidebar-products{
-    min-height: 890px!important;
+.flex-gap {
+    gap: 15px;
+}
+
+
+
+.contact-card {
+    max-width: 220px !important;
+}
+
+.sidebar-products {
+    min-height: 890px !important;
+}
+
+.ar-containers-container {
+    direction: rtl !important;
+}
+
+.mobile-back-btn {
+    display: none;
 }
 
 @media (max-width: 981px) {
-    .productspage-products-container{
+    .productspage-products-container {
         display: flex;
         flex-direction: column;
     }
-    .products-flex-container{
+
+    .products-flex-container {
         flex-direction: column;
     }
-    .products-text-container{
-        margin: auto!important;
+
+    .products-text-container {
+        margin: auto !important;
         width: 95%;
     }
-    .products-title-img-flex-container-containers{
+
+    .products-title-img-flex-container-containers {
         margin: 0;
         direction: ltr;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
-    .images-container{
+
+    .mobile-back-btn {
+        display: block;
+    }
+
+    .desktop-back-btn {
+        display: none;
+    }
+
+    .images-container {
         flex-direction: row;
-        padding: 10px;
+        gap: 0px;
+        padding: 20px;
+        height: 300px;
     }
-    .container-img{
+
+    .flex-gap img{
+        width: 100%;
+    }
+
+    .container-img {
         width: 50%;
     }
-   .contact-card{
-    width: 100%;
-   }
+
+    .contact-card {
+        width: 100%;
+    }
 }

@@ -32,7 +32,7 @@ function App() {
   useEffect(() => {
     if (i18n.language === "ar") {
       document.body.style.textAlign = "right";
-      document.body.style.fontFamily = "Noto Sans Arabic, sans-serif";
+      document.body.style.fontFamily = "Cairo', sans-serif;";
     } else {
       document.body.style.textAlign = "left";
     }

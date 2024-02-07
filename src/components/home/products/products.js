@@ -23,7 +23,7 @@ const HomeProducts = () => {
     ]
     return (<section id='products'>
         <div className='products-product-container-cups'>
-            <h3>{t("homeproducts.cups")}</h3>
+            <h2>{t("homeproducts.cups")}</h2>
             <div className='HomeProducts'>
                 {cupsUrls.map((item, index) => {
                     return (
@@ -39,13 +39,13 @@ const HomeProducts = () => {
         </div>
 
         <div className='products-product-container-containers'>
-            <h3>{t("homeproducts.containers")}</h3>
+            <h1>{t("homeproducts.containers")}</h1>
             <div className='HomeProducts-containers'>
                 {containersUrl.map((item, index) => {
                     return (
-                        <div key={index}>
+                        <div key={index} className='d-flex flex-column align-items-center'>
                             <img key={index} style={{ width: "100%" }} alt="Paper-Product" src={item.url} />
-                            <h5 key={index} style={{ textAlign: "center" }}>{item.title}</h5>
+                            <h5 key={index} style={{ textAlign: "center", marginTop: "20px" }}>{item.title}</h5>
                         </div>
                     )
                 })}

@@ -21,7 +21,7 @@ const Hero = () => {
           {t("hero.description")}
         </div>
         <button to="/contact" onClick={() => history.push("/contact")} className='fancy-button'>
-  {t("contactus.title")}
+  {t("homecontactus.button")}
 </button>
       </div>
     </div>

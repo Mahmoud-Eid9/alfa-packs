@@ -1,12 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './Products.css'
 import PageTitle from '../../pageTitle/PageTitle';
 import SideBar from '../../SideBar/SideBar';
 import Footer from '../../Footer/Footer';
-import Product from '../Product/Product';
 import { useTranslation } from 'react-i18next'
-import { NavLink } from 'react-router-dom';
-import ContactCard from '../../ContactCard/ContactCard';
 import { useHistory } from "react-router-dom";
 
 const ProductsContainers = (props) => {
@@ -22,13 +19,8 @@ const ProductsContainers = (props) => {
         {i18n.language === "ar" ? (
             <div className='Article-container'>
                 <SideBar className='Contactsidebar' sidebarItems={sidebarItems} />
-                <div className='products-title-img-flex-container-containers'>
-                    <div className='images-container'>
-                        <img src='images/containers/container-20oz.webp' alt='paper-container' className='container-img' />
-                        <img src='images/containers/container-30oz.webp' alt='paper-container' className='container-img' />
-
-                    </div>
-                    <div className='products-text-container'>
+                <div className='products-title-img-flex-container-containers ar-containers-container'>
+                    <div className='products-text-container' >
                         <h3 className={i18n.language === "ar" ? "sectionTitlearabic" : "sectionTitle"}>
                             {t("homeproducts.services.titles.customdesign")}
                         </h3>
@@ -53,9 +45,22 @@ const ProductsContainers = (props) => {
                         <h5>
                             {t("products.sizes.containers")}
                         </h5>
+                        <button className='backbtn desktop-back-btn' onClick={() => history.push("/")}>{t("back")}</button>
                     </div>
-
+                    <div className='images-container '>
+                        <div className='d-flex flex-column align-items-center flex-gap'>
+                        <img src='images/containers/container-20oz.webp' alt='paper-container' className='container-img' />
+                        <h4>{t("products.20ozcontainer")}</h4>
+                        </div>
+                        <div className='d-flex flex-column align-items-center flex-gap'>
+                        <img src='images/containers/container-30oz.webp' alt='paper-container' className='container-img' />
+                        <h4>{t("products.30ozcontainer")}</h4>
+                        </div>
+                    </div>
+                    
                 </div>
+                <button className='backbtn mobile-back-btn' onClick={() => history.push("/")}>{t("back")}</button>
+                
             </div>
 
 
@@ -89,14 +94,22 @@ const ProductsContainers = (props) => {
                         <h5>
                             {t("products.sizes.containers")}
                         </h5>
-                        <button className='backbtn' onClick={() => history.push("/")}>{t("back")}</button>
+                        <button className='backbtn desktop-back-btn' onClick={() => history.push("/")}>{t("back")}</button>
                     </div>
                     <div className='images-container'>
+                    <div className='d-flex flex-column align-items-center flex-gap'>
                         <img src='images/containers/container-20oz.webp' alt='paper-container' className='container-img' />
+                        <h4>{t("products.20ozcontainer")}</h4>
+                        </div>
+                        <div className='d-flex flex-column align-items-center flex-gap'>
                         <img src='images/containers/container-30oz.webp' alt='paper-container' className='container-img' />
+                        <h4>{t("products.30ozcontainer")}</h4>
+                        </div>
 
                     </div>
+                        
                 </div>
+                <button className='backbtn mobile-back-btn' onClick={() => history.push("/")}>{t("back")}</button>
             </div>
         )}
 
