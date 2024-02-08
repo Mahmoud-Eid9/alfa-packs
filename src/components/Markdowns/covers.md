@@ -1,6 +1,6 @@
 ## Covers
 ---
-We provide different kinds of coers for all cups and containers sizes in addition to other accessories such as steller, sugar, spoons...etc.
+We provide different kinds of covers for all cups and containers sizes in addition to other accessories such as steller, sugar, spoons...etc.
 
 <a class="backbtn" href="/">Back</a>
 
